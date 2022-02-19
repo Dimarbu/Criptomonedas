@@ -1,0 +1,35 @@
+<div class="container-home">
+   <section class="title-home-contain">
+      <h2 class="font2">Mis Monedas</h2>
+      <button class="add-currency-btn">
+         <p> AGREGAR MONEDA </p>
+      </button>
+   </section>
+   <hr>
+   <div class="table-container font1">
+      <table>
+         <thead>
+            <tr class="table-title">
+               <th class="hash-title">#</th>
+               <th class="symbol-title">Símbolo</th>
+               <th class="name-title">Nombre</th>
+               <th class="exchange-rate-title">Tasa de cambio</th>
+               <th class="empty-box-title"></th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let coin of coins">
+               <th> {{coin.id}} </th>
+               <td> {{coin.simbolo}} </td>
+               <td> {{coin.nombre}} </td>
+               <td> {{coin.tasa}}</td>
+               <td class="delete-edit-btn">
+                  <button type="button"> <img class="img-edit" src="../../assets/img/edit.png" alt="editar"> </button>
+                  <button type="button"> <img class="img-remove" src="../../assets/img/trash-bin.png" alt="eliminar">
+                  </button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
