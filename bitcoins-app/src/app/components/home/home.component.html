@@ -1,0 +1,75 @@
+<div class="container-home">
+   <button>Ver Listado</button>
+   <section class="title-home-contain">
+      <h2 class="font2">Mis Monedas</h2>
+      <div *ngIf="modalSwitch == true" class="close-modal">
+         <app-modal></app-modal>
+      </div>
+      <button (click)="openModal()" class="add-currency-btn">
+         <h3> AGREGAR MONEDA </h3>
+      </button>
+   </section>
+   <hr>
+
+
+   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table">
+      <ng-container matColumnDef="id">
+         <th mat-header-cell *matHeaderCellDef> # </th>
+         <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="simbolo">
+         <th mat-header-cell *matHeaderCellDef> Símbolo </th>
+         <td mat-cell *matCellDef="let element"> {{element.simbolo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="nombre">
+         <th mat-header-cell *matHeaderCellDef> Nombre </th>
+         <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="tasa">
+         <th mat-header-cell *matHeaderCellDef> Tasa de cambio </th>
+         <td mat-cell *matCellDef="let element"> {{element.tasa}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="empty">
+         <th mat-header-cell *matHeaderCellDef> </th>
+         <td mat-cell *matCellDef="let element">
+            <img src="../../assets/img/edit.png" alt="editar" class="img-edit">
+            <img src="../../assets/img/trash.png" alt="eliminar" class="img-remove">
+         </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+   </table>
+</div>
+
+
+<!-- <div class="table-container font1">
+      <table>
+         <thead>
+            <tr class="table-title">
+               <th class="hash-title">#</th>
+               <th class="symbol-title">Símbolo</th>
+               <th class="name-title">Nombre</th>
+               <th class="exchange-rate-title">Tasa de cambio</th>
+               <th class="empty-box-title"></th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let coin of coins">
+               <th> {{coin.id}} </th>
+               <td> {{coin.simbolo}} </td>
+               <td> {{coin.nombre}} </td>
+               <td> {{coin.tasa}}</td>
+               <td class="delete-edit-btn">
+                  <button type="button"> <img class="img-edit" src="../../assets/img/edit.png" alt="editar"> </button>
+                  <button type="button"> <img class="img-remove" src="../../assets/img/trash-bin.png" alt="eliminar">
+                  </button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div> -->

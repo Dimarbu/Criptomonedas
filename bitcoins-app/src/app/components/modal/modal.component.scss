@@ -1,0 +1,95 @@
+.modal-container {
+    position: absolute;
+    width: 100%;
+    height: 860px;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_body {
+    position: absolute;
+    width: 448px;
+    height: 436px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-content {
+    width: 70%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.btn-close-modal {
+    position: absolute;
+    right: 10.94%;
+    top: 5.67%;
+    color: #2c2a29;
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+h3 {
+    position: absolute;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    color: #000000;
+    left: 70px;
+}
+.mat-form-field {
+    width: 295px;
+    height: 35px;
+    padding: 0px 0px 4px;
+    background: #ffffff;
+    border: green 2px solid;
+    top: 80px;
+}
+.sect-btns-guardar-cancelar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 240px;
+}
+@mixin btn-modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 20px;
+    border-radius: 60px;
+    height: 38px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #292929;
+}
+.btn-guardar {
+    @include btn-modal;
+    width: 103px;
+    background: #fdda24;
+    border: none;
+}
+.btn-cancelar {
+    @include btn-modal;
+    width: 106px;
+    border: 1px solid #2c2a29;
+    box-sizing: border-box;
+    border-radius: 60px;
+}

@@ -1,0 +1,24 @@
+<div class="modal-container">
+    <div class="modal_body">
+        <button (click)="closeModal()" class="btn-close-modal">X</button>
+        <div class="modal-content">
+            <h3>Listado de monedas</h3>
+
+            <section>
+                <mat-form-field appearance="fill">
+                    <mat-label>Opción 1</mat-label>
+                    <mat-select>
+                        <mat-option>Ninguna</mat-option>
+                        <!-- <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option> -->
+                    </mat-select>
+                </mat-form-field>
+            </section>
+
+            <section class="sect-btns-guardar-cancelar">
+                <button class="btn-guardar">Guardar</button>
+                <button (click)="closeModal()" class="btn-cancelar">Cancelar</button>
+            </section>
+        </div>
+    </div>
+
+</div>

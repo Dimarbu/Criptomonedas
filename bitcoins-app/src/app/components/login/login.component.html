@@ -1,0 +1,22 @@
+<div class="login-container__main">
+    <div class="login-content">
+        <div class="title-signIn-box">
+            <h2>Sign In</h2>
+        </div>
+        <div class="line-signIn"></div>
+        <form method="post">
+            <div>
+                <input [(ngModel)]="userCredentials.username" class="input-username" type="text" name="username"
+                    placeholder="user name" autofocus required>
+            </div>
+            <div>
+                <input [(ngModel)]="userCredentials.password" class="input-password" type="password" name="password"
+                    placeholder="Password" required>
+            </div>
+            <div>
+                <input (click)="login()" class="btn-signIn" type="submit" value="SIGN IN">
+            </div>
+        </form>
+    </div>
+
+</div>

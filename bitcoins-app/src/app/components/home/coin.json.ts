@@ -1,4 +1,4 @@
-import { Coin } from "../model/coin";
+import { Coin } from "../../model/coin";
 
 export const COINS: Coin[] = [
     {id: 1, simbolo: 'BTC', nombre: 'Bitcoin', tasa: '$61,189.02'},

@@ -1,0 +1,149 @@
+$font: 'Roboto', sans-serif;
+$whiteColor: #FFFFFF;
+
+.login-container__main {
+    position: relative;
+    width: 100%;
+    height: 860px;
+    background: $whiteColor;
+}
+.login-content {
+    position: absolute;
+    width: 631px;
+    height: 507px;
+    left: calc(50% - 631px/2 - 0.5px);
+    top: 177px;
+    background: $whiteColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.title-signIn-box {
+    width: 437px;
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+}
+.login-content h2 {
+    position: absolute;
+    width: 63px;
+    height: 23px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #494949;
+    padding-bottom: 15px
+}
+.line-signIn {
+    position: absolute;
+    width: 437px;
+    height: 0px;
+    border: 1px solid #DEDEDE;
+    top: 90px;
+}
+.input-username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 15px;
+    position: static;
+    width: 300px;
+    height: 72px;
+    left: 0px;
+    top: 1px;
+    border: none;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 0px;
+    top: 150px;
+    border-bottom: 1px #2C2A29 solid;
+    border-radius: 0.5px;
+    margin: 50px 0 15px 0;
+}
+.input-username::placeholder {
+    position: static;
+    width: 255px;
+    height: 22px;
+    left: 0px;
+    top: calc(50% - 22px/2);
+    font-family: Open Sans; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+    align-items: center;
+    letter-spacing: -0.3px;
+    color: #BCBDC0;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 10px;
+}
+.input-password {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 15px;
+    position: static;
+    width: 300px;
+    height: 72px;
+    left: 0px;
+    top: 1px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 0px;
+    border: none;
+    border-bottom: 1px #2C2A29 solid;
+    border-radius: 0.5px;
+}
+.input-password::placeholder {
+    position: static;
+    width: 255px;
+    height: 22px;
+    left: 0px;
+    top: calc(50% - 22px/2);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.3px;
+    color: #BCBDC0;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 10px;
+}
+.btn-signIn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 20px;
+    position: absolute;
+    width: 98px;
+    height: 38px;
+    left: 268px;
+    top: 355px;
+    background: #FDDA24;
+    border-radius: 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #292929;
+    border: none;
+}
