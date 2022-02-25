@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { HomeService } from './infrastructure/services/home.service';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { LoginAuthComponent } from './auth/login-auth/login-auth.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +20,16 @@ import { MaterialModule } from './material/material.module';
     HomeComponent,
     ModalComponent,
     LoginComponent,
-    CoinListComponent
+    CoinListComponent,
+    LoginAuthComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NoopAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [HomeService],
   bootstrap: [AppComponent]

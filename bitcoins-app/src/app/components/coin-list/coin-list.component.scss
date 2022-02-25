@@ -1,0 +1,113 @@
+.container-coin-list {
+    position: relative;
+    width: 100%;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+.link-to-home {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+    margin-top: 45px;
+    a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #494949;
+        text-decoration: none;
+    }
+}
+.title-coin-list-contain {
+    display: flex;
+    width: 1078px;
+    justify-content: space-between;
+    align-self: center;
+}
+.title-coin-list-contain h2 {
+    position: absolute;
+    width: 250px;
+    height: 23px;
+    left: 177px;
+    top: 265px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #494949;
+}
+hr {
+    position: absolute;
+    width: 1074.5px;
+    height: 0px;
+    left: 179px;
+    top: 304.5px;
+    border: 1px solid #dedede;
+}
+
+table {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    padding: 0px;
+    position: absolute;
+    width: 1078px;
+    height: 235px;
+    left: 177px;
+    top: 344px;
+}
+
+th.mat-header-cell {
+    background: #f4f4f4;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+    color: #2c2a29;
+    height: 64px;
+}
+.mat-column-id {
+    width: 10%;
+    text-align: left;
+}
+.mat-column-simbolo {
+    width: 19%;
+    text-align: left;
+}
+.mat-column-nombre {
+    width: 14%;
+    text-align: left;
+}
+.mat-column-tasa {
+    width: 18%;
+    text-align: left;
+}
+.mat-column-empty {
+    width: 5%;
+    text-align: left;
+}
+.mat-cell {
+    height: 57px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #2c2a29;
+}
+.mat-cell img {
+    width: 17px;
+    height: 19px;
+    padding-right: 10px;
+}

@@ -7,15 +7,15 @@
             <section>
                 <mat-form-field appearance="fill">
                     <mat-label>Opción 1</mat-label>
-                    <mat-select>
+                    <mat-select [(ngModel)]="optionCoin">
                         <mat-option>Ninguna</mat-option>
-                        <!-- <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option> -->
+                        <mat-option *ngFor="let cripto of coins" [value]="cripto">{{cripto.simbolo}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </section>
 
             <section class="sect-btns-guardar-cancelar">
-                <button class="btn-guardar">Guardar</button>
+                <button (click)="saveCoinOfModal()" class="btn-guardar">Guardar</button>
                 <button (click)="closeModal()" class="btn-cancelar">Cancelar</button>
             </section>
         </div>

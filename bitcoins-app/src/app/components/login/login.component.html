@@ -14,7 +14,7 @@
                     placeholder="Password" required>
             </div>
             <div>
-                <input (click)="login()" class="btn-signIn" type="submit" value="SIGN IN">
+                <input (click)="login(); saveToken()" class="btn-signIn" type="submit" value="SIGN IN">
             </div>
         </form>
     </div>

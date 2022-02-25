@@ -1,5 +1,7 @@
 <div class="container-home">
-   <button>Ver Listado</button>
+   <div class="link-coin-list">
+      <a routerLink="/coin-list">Ver Listado de monedas</a>
+   </div>
    <section class="title-home-contain">
       <h2 class="font2">Mis Monedas</h2>
       <div *ngIf="modalSwitch == true" class="close-modal">
@@ -11,8 +13,7 @@
    </section>
    <hr>
 
-
-   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table">
+   <table mat-table [dataSource]="listCoins" class="mat-elevation-z8 table">
       <ng-container matColumnDef="id">
          <th mat-header-cell *matHeaderCellDef> # </th>
          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
@@ -37,7 +38,7 @@
          <th mat-header-cell *matHeaderCellDef> </th>
          <td mat-cell *matCellDef="let element">
             <img src="../../assets/img/edit.png" alt="editar" class="img-edit">
-            <img src="../../assets/img/trash.png" alt="eliminar" class="img-remove">
+            <img (click)="deleteCoin(element)" src="../../assets/img/trash.png" alt="eliminar" class="img-remove">
          </td>
       </ng-container>
 
